@@ -1,0 +1,4 @@
+LET doc = DOCUMENT('https://news.ycombinator.com', {driver: "cdp"})
+FOR post in ELEMENTS(doc, '.itemlist .athing .titlelink')
+RETURN post
+

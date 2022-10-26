@@ -1,0 +1,4 @@
+LET doc = DOCUMENT('https://dmmland.com/tw/star/7j3ddr.html', {driver: "cdp"})
+FOR video in ELEMENTS(doc, '.videothumblist .video')
+RETURN video
+
